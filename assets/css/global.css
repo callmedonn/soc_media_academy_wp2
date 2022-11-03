@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* ================= Halaman User ================= */
+
+/* Header Start */
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-head-login {
+  background-color: #E7583C;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  color: white !important;
+  border: 2px solid #E7583C;
+}
+
+.btn-head-login:hover {
+  background-color: #ad2b11;
+}
+
+.btn-head-login a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff !important;
+}
+
+.btn-head-regist a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #E7583C !important;
+}
+
+.btn-head-login a,
+.btn-head-regist a {
+  padding: 0;
+}
+
+.btn-head-regist {
+  background-color: #fff;
+  padding: 6px 10px;
+  border: 2px solid #E7583C;
+  border-radius: 10px;
+  outline: none;
+}
+
+.btn-head-regist:hover {
+  background-color: rgb(231, 230, 230);
+}
+
+
+.link-head {
+  color: #E7583C;
+}
+
+/* Header End */

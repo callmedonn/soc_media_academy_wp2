@@ -11,6 +11,56 @@
     <link href="<?= base_url('assets/vendor/fontawesome-free/css/all.min.css'); ?>" rel="stylesheet" type="text/css">
     <link href="<?= base_url('assets/datatable/datatables.css'); ?>" rel="stylesheet" type="text/css">
     <link href="<?= base_url('assets/css/global.css'); ?>" rel="stylesheet" type="text/css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+        :root {
+            --primary: #01999A;
+            --secondary: #B8E439;
+            --fontColor: #3d3d3d;
+            --grey: #EDEDED;
+            --greyDark: #9b9b9b;
+            --shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer Start */
+        footer {
+            background-color: var(--grey);
+            height: 300px;
+        }
+
+        footer .container.container.footer {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        footer .container.container.footer .cr {
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        footer .container.container.footer .cr p {
+            color: var(--fontColor);
+        }
+
+        footer .container.footer ul li {
+            list-style: none;
+        }
+
+        footer .container.footer ul li a {
+            text-decoration: none;
+            color: var(--fontColor);
+            transition: .2s;
+        }
+
+        footer .container.footer ul li a:hover {
+            color: var(--secondary)
+        }
+
+        /* Footer End */
+    </style>
+
 </head>
 
 <body>

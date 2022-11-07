@@ -1,5 +1,9 @@
 <?= $this->session->flashdata('pesan'); ?>
 
+<head>
+    <link href="<?= base_url('assets/css/global.css'); ?>" rel="stylesheet" type="text/css">
+</head>
+
 <div>
     <div class="container d-flex" style="margin-top:-50px;width:100%; height:500px; background-image: url(<?= base_url('assets/img/bg-head.png') ?>);background-size:cover">
         <div class="jb-head-1 d-flex align-items-center" style="height: 100% ; width: 100%">
@@ -55,19 +59,22 @@
     <div class="soc-med d-flex flex-column align-items-center mt-5">
         <h3>Events</h3>
         <p style="color:#B7B7B7">Ikuti event seru yang akan datang dan hadir dikotamu</p>
-        <div class="content-events row" style="background-color: wheat; width:100%">
-            <div class="box-content mt-3 col-md-6" style="background-color: #DDDDDD">
-                <div class="content-box" style="background-color:aqua; height:350px"></div>
-            </div>
-            <div class="box-content mt-3 col-md-6" style="background-color: #DDDDDD">
-                <div class="content-box" style="background-color:aqua; height:350px"></div>
-            </div>
-            <div class="box-content mt-3 col-md-6" style="background-color: #DDDDDD">
-                <div class="content-box" style="background-color:aqua; height:350px"></div>
-            </div>
-            <div class="box-content mt-3 col-md-6" style="background-color: #DDDDDD">
-                <div class="content-box" style="background-color:aqua; height:350px"></div>
-            </div>
+        <div class="content-events row" style="width:100%">
+            <?php
+            $imgData = base_url('assets/img/event_1.png');
+            for ($x = 0; $x < 6; $x++) {
+                echo "<div class='box-content mt-3 col-md-4'>
+                        <div class='content-box' style='background-color: white; border-radius: 10px; box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1);'>
+                            <img class='d-block w-100' style='border-top-left-radius: 10px;border-top-right-radius: 10px;' src='$imgData' alt='Third slide'>
+                            <div class='p-2'>
+                                <h5>Memilih jenis konten YouTube 2022</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur,
+                                    officiis? Obcaecati necessitatibus, vitae aliquid non culpa inventore ad.</p>
+                            </div>
+                        </div>
+                    </div>";
+            }
+            ?>
         </div>
     </div>
 </div>
